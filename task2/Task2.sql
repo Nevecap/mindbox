@@ -1,4 +1,4 @@
 /*
-Подразумевается, что есть 2 таблицы, продукты и категории, а также таблица для отображения их связей с названием connections
+РџРѕРґСЂР°Р·СѓРјРµРІР°РµС‚СЃСЏ, С‡С‚Рѕ РµСЃС‚СЊ 2 С‚Р°Р±Р»РёС†С‹, РїСЂРѕРґСѓРєС‚С‹ Рё РєР°С‚РµРіРѕСЂРёРё, Р° С‚Р°РєР¶Рµ С‚Р°Р±Р»РёС†Р° РґР»СЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РёС… СЃРІСЏР·РµР№ СЃ РЅР°Р·РІР°РЅРёРµРј connections
 */
 SELECT Product.Name, Category.Name FROM (Product LEFT JOIN Connections ON Products.ID = Connections.ProductID) LEFT JOIN Category ON Connections.CategoryID = Categorys.ID
